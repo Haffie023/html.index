@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIGHT CLICK SURVEY FORM</title>
+	<style>
+		form {
+			margin: 0 auto;
+			width: 500px;
+			padding: 1em;
+			border: 1px solid #CCC;
+			border-radius: 1em;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 0.5em;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		select {
+			width: 100%;
+			padding: 0.5em;
+			margin-bottom: 1em;
+			border-radius: 0.25em;
+			border: none;
+			box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 0.5em;
+			border-radius: 0.25em;
+			border: none;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">--Please select--</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+
+        <label for="source">where did you hear about us?:</label>
+        <input type="text" id="source" name="source">
+            <option value="">--Please select--</option>
+			<option value="social media platforms">social media platforms</option>
+			<option value="word of mouth">word of mouth</option>
+            <option value="repeat customer">repeat customer</option>
+			<option value="other">Other</option>
+		</select>
+
+        <label for="frequency">How often do you need to use photography/videography services?</label>
+        <input type="text" id="frequency" name="frequency">
+
+        <label for="satisfaction">How satisfied are you with our services?</label>
+        <input type="text" id="satisfaction" name="satisfaction">
+
+        <label for="improvement">What do you think we can improve on?</label>
+        <input type="text" id="improvement" name="improvement">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
